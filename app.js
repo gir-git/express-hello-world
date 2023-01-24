@@ -6,7 +6,7 @@ app.get("/", (req, res) => res.type('html').send(html));
 
 const postsJson = [{"title":"test post title","content":"lorem ipsum"},{"title":"test post title 2","content":"lorem ipsum 2"},{"title":"test post title 3","content":"lorem ipsum 3"}];
 
-app.get("/posts",(req,res)=> res.type('json').send(posts));
+app.get("/posts",(req,res)=> res.type('html').send(posts));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
